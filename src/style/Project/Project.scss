@@ -1,0 +1,229 @@
+.project {
+    width: 100%;
+    height: 0vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: #000000;
+    z-index: 101;
+    transition: height 1s;
+
+}
+        .add-height-project {
+            height: 100vh;
+        }
+
+.project-close {
+    position: absolute;
+    top: 40px;
+    right: 120px;
+    opacity: 1;
+    display: none;
+    z-index: 92;
+
+}
+
+.project-content_wrap {
+    max-width: 850px;
+    min-width: 850px;
+    position: relative;
+    opacity: 0;
+    transition: opacity;
+
+}
+
+.project-imageFrame {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+        #project-imageFrame1 {
+            background-image: url('/src/assets/images/image1.jpg');
+        }
+        #project-imageFrame2{
+            background-image: url('/src/assets/images/image2.jpg');
+        }
+        #project-imageFrame3 {
+            background-image: url('/src/assets/images/image3.jpg');
+        }
+        #project-imageFrame4 {
+            background-image: url('/src/assets/images/image4.jpg');
+        }
+
+.project-text_wrap {
+    width: 100%;
+    display: flex;
+}
+
+    .project-text-titleAndDescription {
+        flex: 1;
+    }
+
+        .project-text-title {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
+
+        .project-text-description {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+
+    .project-text-builtAndLinks {
+        flex: 1;
+        padding-top: 40px;
+        margin-left: 20px;
+    }
+
+        .project-text-built {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 5px;
+             white-space: nowrap;
+        }
+
+        .project-text-companyName {
+            font-size: 14px;
+            font-weight: 200;
+            margin-bottom: 5px;
+             white-space: nowrap;
+        }
+
+        .project-text-languages {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 22px;
+            margin-bottom: 20px;
+
+        }
+
+    .project-text-link_wrap {
+        display: flex;
+        z-index: 91;
+        position: relative;
+
+    }
+
+        .project-text-link2 {
+            margin-left: 10px;
+        }
+
+        .project-text-link-text {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 800;
+            cursor: none;
+        }
+
+
+.show-Project {
+    opacity: 1;
+}
+
+.Show-Close {
+    display: block;
+}
+
+
+.display-flex {
+    display: flex;
+}
+
+
+
+@media screen and (max-width: 1025px){
+    .project-content_wrap {
+        width: 83vw;
+        min-width: 0;
+    }
+    .project-text-title {
+        // font-size: 2.1vw;
+    }
+    .project-text-description  {
+        
+    }
+    .project-text-built {
+
+    }
+    .project-text-companyName  {
+
+    }
+    .project-text-languages {
+
+    }
+    .project-text-link-text {
+
+    }
+
+}
+
+
+@media screen and (max-width: 1025px){
+    .project-text_wrap {
+        flex-direction: column;
+    }
+    .project-text-builtAndLinks {
+        margin-left: 0;
+        margin-top: 20px;
+        padding-top: 0;
+    }
+    .project-text-description  {
+        line-height: 20px;
+    }
+}   
+
+@media screen and (max-width: 635px){
+    .project-close {
+    right: 45px;
+    top: 37px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .project-imageFrame {
+        height: 16vh;
+        
+    }
+
+    .project-text-description  {
+        font-size: 3vw;
+    }
+}
+
+
+
+
+
+@media screen and (max-height: 670px){
+    .project-imageFrame {
+        height: 20vh;
+    }
+    .project-text-title {
+        font-size: 3vh;
+    }
+    .project-text-description  {
+        font-size: 2.1vh;
+    }
+    .project-text-built {
+        font-size: 2vh;
+    }
+    .project-text-companyName  {
+        font-size: 2vh;
+    }
+    .project-text-languages {
+        font-size: 2vh;
+    }
+    .project-text-link-text {
+
+    }
+}

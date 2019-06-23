@@ -1,0 +1,47 @@
+.introLoader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 102;
+    // background-color: black;
+}
+
+.intro-content_wrap {
+    opacity: 1;
+    transition: opacity;
+}
+
+.intro-header {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 20px;
+    margin-bottom: 40px;
+}
+
+.intro-progressBar {
+    width: 0%;
+    height: 1px;
+    background-color: #eaeaea;
+    transition: width;
+}
+
+
+    .IntroHide {
+        display: none;
+    }
+
+
+@media screen and (max-width: 500px){
+    .intro-header {
+    font-size: 5vw;
+}
+}
+
+

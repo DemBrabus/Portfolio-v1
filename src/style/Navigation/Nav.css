@@ -1,0 +1,249 @@
+.nav {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0px 80px;
+  -webkit-transition: padding 1s;
+  transition: padding 1s;
+  opacity: 0;
+  z-index: 100;
+  -webkit-transition: opacity;
+  transition: opacity;
+}
+
+.nav-logo {
+  font-size: 26px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #eaeaea;
+  cursor: none;
+}
+
+.nav-links_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.Flex-Item-End {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-link {
+  font-size: 17px;
+  font-weight: 400;
+  color: #eaeaea;
+  cursor: none;
+}
+
+.nav-link-aboutClose {
+  display: none;
+  opacity: 0;
+}
+
+.nav-link-contactClose {
+  display: none;
+  opacity: 0;
+}
+
+.nav-mobile-icon {
+  width: 34px;
+  height: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: none;
+  display: none;
+}
+
+.nav-mobile-icon-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #eaeaea;
+  border-radius: 1px;
+}
+
+.bar1 {
+  width: 100%;
+}
+
+.bar2 {
+  width: 75%;
+}
+
+.bar3 {
+  width: 50%;
+}
+
+@media screen and (max-width: 635px) {
+  .nav {
+    padding: 0px 30px;
+  }
+  .nav-logo {
+    font-size: 18px;
+  }
+  .nav-mobile-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-links_wrap {
+    display: none;
+  }
+  .nav-link {
+    font-size: 13px;
+  }
+}
+
+/* ------- Side Nav ------ */
+.sideNav {
+  width: 0px;
+  height: 0px;
+  background-color: transparent;
+  position: fixed;
+  top: -100px;
+  right: -100px;
+  border-radius: 50%;
+  z-index: 101;
+  display: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.sideNav-content_wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sideNav-link {
+  color: #eaeaea;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.sideNav-about {
+  left: 7%;
+  bottom: 40%;
+  opacity: 1;
+}
+
+.sideNav-aboutClose {
+  left: 20%;
+  bottom: 42%;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.sideNav-contact {
+  left: 20%;
+  bottom: 20%;
+  opacity: 1;
+}
+
+.sideNav-contactClose {
+  left: 20%;
+  bottom: 42%;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.sideNav-exit_wrap {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  opacity: 0;
+  bottom: 39%;
+  left: 34%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.sideNav-exit-bar {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: #eaeaea;
+}
+
+.sideNav-exit-bar1 {
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.sideNav-exit-bar2 {
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 635px) {
+  .sideNav {
+    display: block;
+  }
+}
+
+.Hide {
+  display: none;
+  opacity: 0;
+}
+
+.Opacity0 {
+  opacity: 0;
+}
+
+.Opacity1 {
+  opacity: 1;
+}
+
+.Show {
+  display: block;
+  opacity: 1;
+}
+
+.OverFlow {
+  overflow: hidden;
+}
+/*# sourceMappingURL=Nav.css.map */

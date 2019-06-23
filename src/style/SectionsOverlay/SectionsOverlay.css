@@ -1,0 +1,44 @@
+.sectionOverlay {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 91;
+}
+
+.section1-Overlay {
+  margin-top: 80vh;
+}
+
+.section2-Overlay {
+  margin-top: 160vh;
+}
+
+.section3-Overlay {
+  margin-top: 240vh;
+}
+
+.section4-Overlay {
+  margin-top: 320vh;
+  height: 100vh;
+}
+
+.overlay-box {
+  width: 45vw;
+  height: 15vh;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=SectionsOverlay.css.map */
